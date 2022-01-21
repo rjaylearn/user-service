@@ -47,4 +47,8 @@ public class UserService {
 		return userRepository.findAll();
 	}
 
+	public User updateService(Long userId, User user) {
+		return userRepository.save(user);
+	}
+
 }
